@@ -1,0 +1,102 @@
+
+.toggle {
+  &-block {
+    display: none;
+    padding: 0 35px 35px 35px;
+  }
+  &-btn {
+    display: block;
+    width: 100%;
+    padding: 3%;
+
+    border: none;
+    outline: none;
+    background: none;
+    &:hover,
+    &:focus {
+      background: none;
+
+      color: #403b3b;
+    }
+    &:active {
+      background: #dcbd76;
+
+      color: #403b3b;
+    }
+    &.active {
+      .toggle-down {
+        transform: rotate3d(1, 0, 0, 180deg);
+      }
+    }
+  }
+  &-down {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    margin: 0 0 0 15px;
+
+    vertical-align: middle;
+
+    transition: transform 1s;
+    svg {
+      width: 100%;
+      height: 100%;
+
+      vertical-align: middle;
+
+      fill: #c2a768;
+    }
+  }
+}
+.foto__toggle {
+  &-btn {
+    cursor: default;
+  }
+  &-down {
+    display: none;
+  }
+  &-block {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .toggle {
+    &-down {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .foto__toggle {
+    &-btn {
+      cursor: pointer;
+    }
+    &-down {
+      display: inline-block;
+    }
+    &-block {
+      display: none;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .toggle {
+    &-block {
+      padding: 0 25px 25px 25px;
+    }
+    &-down {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .toggle {
+    &-block {
+      padding: 0 15px 10px 15px;
+    }
+    &-down {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

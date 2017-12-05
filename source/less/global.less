@@ -1,0 +1,49 @@
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  background: #fff;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  position: relative;
+  // max-width: 1200px;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 0 299px;
+}
+.clearfix::after {
+  display: table;
+  clear: both;
+
+  content: "";
+}
+.site-content {
+  padding: 0 0 0 299px;
+}
+
+@media (max-width: 1040px) {
+  .site-content {
+    padding: 0 0 0 299px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 0;
+  }
+  .site-content {
+    padding: 0;
+  }
+}
