@@ -1,0 +1,114 @@
+.christmas {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  background: #fff;
+  &__wraper {
+    position: relative;
+
+    padding-bottom: 66.666%;
+    overflow: hidden;
+  }
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    transform: translateX(-50%);
+  }
+  &__container-img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: inline-block;
+    padding: 10px 25px;
+
+    background: rgba(0, 0, 0, .3);
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    transform: translate(-50%,-50%);
+  }
+
+  // &__content {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+
+  //   width: 90%;
+  //   max-width: 575px;
+
+  //   border: 2px solid #d4b472;
+  //   background: rgba(255, 255, 255, .92);
+
+  //   text-align: center;
+
+  //   transform: translate(-50%, -50%);
+  // }
+  // &__content-toggle {
+  //   padding: 35px;
+  // }
+
+  // &__text {
+  //   padding: 0 0 10% 0;
+  // }
+  // &__btn {
+  //   text-align: center;
+  // }
+}
+
+@media (max-width: 768px) {
+  .christmas {
+    &__wraper {
+      padding-bottom: 75%;
+    }
+    &__content {
+      max-width: 400px;
+    }
+    &__container {
+      margin: 0;
+    }
+    &__container-img {
+      position: absolute;
+      left: 50%;
+
+      width: 100%;
+
+      transform: translateX(-50%);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .christmas {
+    &__text {
+      width: 100%;
+
+      font-size: 16px;
+    }
+  }
+}

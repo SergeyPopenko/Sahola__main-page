@@ -89,14 +89,14 @@
     }
     
      
-  })
+  });
   jQuery("body").on("click", function(){
     if(jQuery(".toggle-btn").hasClass("active")){
       jQuery(".toggle-btn").removeClass("active");
     }
-  }
+  });
   //send modal    
-  jQuery(".modal__form").on("click", "[type=submit]", function(e){        
+  jQuery(".modal__form").on("click", "[type='submit']", function(e){        
 	var validation = 0,            
 	action_form = jQuery(this).parent().closest(".modal__form");        
 	e.preventDefault();        
